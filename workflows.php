@@ -326,11 +326,11 @@ class Workflows {
         CURLOPT_RETURNTRANSFER => true,         // Returns the result as a string
         CURLOPT_URL => $url,                    // Sets the url to request
         CURLOPT_FRESH_CONNECT => true,
-        // 以下为自行添加参数g 
-        CURLOPT_PROXY => "127.0.0.1",           // 代理服务器地址
-        CURLOPT_PROXYPORT => "1080",           // 代理接口
-        CURLOPT_PROXYTYPE => CURLPROXY_SOCKS5   // 代理类型，默认为HTTP代理，这里是使用socks5代理
-        // 如果还有用户名密码，则添加：CURLOPT_PROXYUSERPWD => "user:password"
+        // Proxy Stting
+        CURLOPT_PROXY => "127.0.0.1",           
+        CURLOPT_PROXYPORT => "1080",           
+        CURLOPT_PROXYTYPE => CURLPROXY_SOCKS5
+        //CURLOPT_PROXYUSERPWD => "user:password"
     	);
 
 		if ( $options ):
