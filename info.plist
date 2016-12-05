@@ -41,6 +41,10 @@
 				<integer>1</integer>
 				<key>argumenttext</key>
 				<string>g </string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>5</integer>
 				<key>hotmod</key>
@@ -88,7 +92,7 @@
 				<key>escaping</key>
 				<integer>36</integer>
 				<key>keyword</key>
-				<string>g</string>
+				<string>any</string>
 				<key>queuedelaycustom</key>
 				<integer>1</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -110,7 +114,7 @@ $int = 1;
 
 foreach( $xml as $sugg ):
 	$data = $sugg-&gt;suggestion-&gt;attributes()-&gt;data;
-	$wf-&gt;result( $int.'.'.time(), "$data", "$data");
+	$wf-&gt;result( $int.'.'.time(), "$data", "$data", "", 'icno.png');
 	$int++;
 endforeach;
 
